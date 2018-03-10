@@ -17,8 +17,18 @@
   },
   "homepage": "https://github.com/ericliddle/yelpcamp#readme",
   "dependencies": {
+    "browser-sync": "^2.23.6",
     "ejs": "^2.5.7",
     "express": "^4.16.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-prettyerror": "^1.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
     "request": "^2.83.0"
   }
 }
