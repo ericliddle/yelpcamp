@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ericliddle/yelpclone.git"
+    "url": "git+https://github.com/ericliddle/yelpcamp.git"
   },
   "author": "Eric Liddle",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ericliddle/yelpclone/issues"
+    "url": "https://github.com/ericliddle/yelpcamp/issues"
   },
-  "homepage": "https://github.com/ericliddle/yelpclone#readme",
+  "homepage": "https://github.com/ericliddle/yelpcamp#readme",
   "dependencies": {
     "ejs": "^2.5.7",
     "express": "^4.16.2",
