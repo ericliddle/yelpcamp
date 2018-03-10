@@ -1,0 +1,19 @@
+{
+  "name": "yelpcamp",
+  "version": "0.0.1",
+  "description": "Yelp app built using Node, MongoDB, Express, EJS.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericliddle/yelpclone.git"
+  },
+  "author": "Eric Liddle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericliddle/yelpclone/issues"
+  },
+  "homepage": "https://github.com/ericliddle/yelpclone#readme"
+}
