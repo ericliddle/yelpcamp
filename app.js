@@ -1,18 +1,14 @@
-const express = require("express"),
-  mongoose = require("mongoose"),
-  app = express(),
-  bodyParser = require("body-parser");
+const express   = require("express"),
+mongoose      = require("mongoose"),
+app           = express(),
+bodyParser    = require("body-parser"),
+Campground    = require("./models/campground"),
+seedDB        = require("./seeds")
 
+seedDB();
 mongoose.connect("mongodb://localhost/yelpcamp");
-
-//Schema:
-const campgroundSchema = new mongoose.Schema({
-  name: String,
-  image: String,
-  description: String
-});
-
-const Campground = mongoose.model("Campground", campgroundSchema);
+app.use(bodyParser.urlencoded({ extended: true }));
+app.set("view engine", "ejs");
 
 // Campground.create({
 //   name: "Harrison Hot Springs",
@@ -29,8 +25,6 @@ const Campground = mongoose.model("Campground", campgroundSchema);
 // });
 
 app.use(express.static("public"));
-app.use(bodyParser.urlencoded({ extended: true }));
-app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
   res.render("landing");
